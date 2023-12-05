@@ -1,0 +1,52 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    color: blueviolet;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+div:hover{
+    background-color: blueviolet;
+    color: burlywood;
+}
+
+.link-list li{
+    display: inline-block;
+    margin-top: 30px;
+
+}
+
+.page-link{
+    text-decoration: none;
+    background-color: aquamarine;
+    padding: 10px;
+    color: darkcyan;
+
+}
+
+.page-link:hover{
+    background-color: chocolate;
+    color: blue;
+}
+
+.page-link:focus{
+    border: 5px solid pink;
+}
+
+.page-link:active{
+    background-color: gold;
+    color: rgb(87, 10, 75);
+}
+
+input:focus {
+    background-color: aquamarine;
+  }
+  
+  /* 
+  hover - спрацьовує при наведенні на елемент мишею
+  focus - спрацьовує при фокусі на елемент мишею або за допомогою клавіші "ТАБ"
+  active - спрацьовує при натисненні на посилання
+  */
