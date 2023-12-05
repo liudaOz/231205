@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <a href="index2.html">Go to page2 short way</a>
+  </head>
+  <body>
+    <table>
+   <caption>Taxes</caption>
+
+   <thead>
+    <tr>
+        <th></th>
+        <th class="row-bold">Week day</th>
+        <th class="row-bold">Taxes</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+        <td>1. </td>
+        <td>Monday</td>
+        <td class="text-centre">10 $</td>
+    </tr>
+        
+    <tr>
+        <td>2. </td>
+        <td>Tuesday</td>
+        <td class="text-centre">20 $</td>
+    </tr>
+
+    <tr>
+        <td>3. </td>
+        <td>Wendesday</td>
+        <td class="text-centre">9 $</td>
+    </tr>
+
+    <tr>
+        <td>4. </td>
+        <td>Thusday</td>
+        <td class="text-centre">11 $</td>
+    </tr>
+
+    <tr>
+        <td>5. </td>
+        <td>Friday</td>
+        <td class="text-centre">3 $</td>
+        <td>Free for the employees</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">6-7. </td>
+        <td rowspan="2">Weekend </td>
+        <td>25 % for employee</td>
+        
+        
+    </tr>
+    <tr>
+        <td>15 % for all other</td>
+    </tr>
+   </tbody>
+
+   <tfoot>
+    <tr>
+        <th colspan="2" class="text-centre">Total: </th>
+        <td colspan="2" class="text-centre">$$$</td>
+    </tr>
+   </tfoot>
+</table>
+  </body>
+</html>
+
+<!-- Елементи бувають блочні (block) та строчні (inline) -->
+
+<!-- 
+    <table> - тег з якого розпочинається таблиця
+
+    <thead> - назви стовпців таблиці
+    <tbody> - тіло таблиці (семантичний тег)
+    <tfoot> - нижній колонтитул таблиці (семантичний тег)
+
+    <caption> - визначає назву таблиці (текст автоматично центрується у таблиці)
+
+    <tr> - створити рядок таблиці
+
+    Всередині рядка таблиці ми створюємо комірки.
+    Комірки бувають 2-ох типів.
+    <th> - комірка-заголовок (текст виділяється жирним шрифтом + центрується).
+    <td> - звичайна комірка таблиці
+    
+      
+    rowspan - атрибут комірки, який вказує, на скільки рядків має розтягуватися комірка у вертикальному напрямку
+    colspan - атрибут комірки, який вказує, на скільки рядків має розтягуватися комірка у горизонтальному напрямку
+-->

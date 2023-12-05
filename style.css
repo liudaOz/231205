@@ -1,0 +1,33 @@
+table, td, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+
+td, th{
+    border: 1px solid slateblue;
+}
+
+caption{
+    color: rgb(184, 33, 59);
+    font-weight: bold;
+}
+
+.text-centre{
+  text-align: center;
+}
+
+thead{
+    border: 2px;
+}
+
+tfoot{
+    border: inherit;
+}
+
+.row-bold{
+    border: 2px solid black;
+}
+
+
+
