@@ -1,0 +1,47 @@
+.container {
+    background-color: lime;
+    height: 800px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .wrapper {
+    background-color: dodgerblue;
+    width: 80%;
+    height: 800px;
+  }
+  
+  .inner {
+    text-align: center;
+    font-size: 40px;
+    width: 80px;
+    height: 80px; 
+    background-color: forestgreen;
+    border: 1px solid black;
+  }
+  
+  .div1 {
+    position: absolute;
+    top: 200px;
+  }
+  
+  .div2 {
+    position: relative;
+    top: 10px;
+    left: 20px;
+  }
+  
+  .div3 {
+    position: fixed;
+    top: 50%;
+  }
+  
+  /*.div4 {
+  
+  }*/
+  
+  /* 
+  relative (відносне позиціонування) - коли ми позиціонуємось відносно місця в нормальному потоці
+  fixed (фіксоване позиціонування) - коли ми позиціонуємось відносно вьюпорта. При тому елемент виривається з макету документу
+  absolute (абсолютне позиціонування) - коли ми позиціонуємось відносно найближчого нестатично позиціонованого родича. Елемент виривається з потоку
+  */
