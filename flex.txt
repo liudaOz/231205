@@ -1,0 +1,35 @@
+Роман Freshcode19:06
+https://github.com/TrainingCenterFreshcode/html-css-project
+Роман Freshcode19:08
+1. Створіть батьківський контейнер
+2. Створіть в цьому контейнері 3 або або 5 елементів
+3. Пограйтесь з властивостями space-between, space-evenly, space-around.
+4. Спробуйте змінити спрямування осей (flex-direction)
+1. Задати батьківському елементу display: flex;
+
+2. Спрямування осей координат
+flex-direction:
+row: main зліва направо
+column: main зверху вниз
+column-reverse: main знизу вверх
+row-reverse: main зправа наліво
+
+3. justify-content - вирівнювання по головній осі (main):
+- center - всі елементи по центру
+- flex-end - всі елементи в кінець осі
+- flex-start - всі елементи на початок осі
+- space-around
+    X..2X..2X..2X..X
+- space-evenly
+    ..X..X..X..
+- space-between
+    X..X..X..X..X
+
+
+
+    Роман Freshcode18:15
+div.container>div.item{$}*4
+
+
+Роман Freshcode20:03
+div.item{$}*200

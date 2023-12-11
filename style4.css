@@ -1,74 +1,66 @@
-.nav-list {
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-  }
-  
-  .list-item {
+p{
     position: relative;
-    display: inline-block;
-    padding: 20px;
-    background-color: rgb(248, 99, 45);
-  }
-  
-  .link {
-    color: white;
-    text-decoration: none;
+    color: blue;
+    cursor: crosshair;
     font-size: 20px;
-  }
-  
-  .sub-nav-list {
+    border: 1px solid black;
+}
+
+p::first-line{
+    line-height: 45px;
+    background-color: darksalmon;
+}
+
+.letter{
+    font-size: 20px;
+    color: crimson;
+    font-style: italic;
+}
+
+p::first-letter{
+    font-size: 20px;
+    color:crimson;
+    font-style: italic;
+
+}
+
+p::first-line{
+    background-color: yellow;
+    color:chocolate;
+}
+
+p::selection{
+    color: pink;
+    background-color: blueviolet;
+    
+}
+
+p::before{
     position: absolute;
-    top: 62px;
-    left: -35px;  
-    display: block;
-    width: 150px;
-  }
-  
-  .sub-list-item {
-    display: none;
-    background-color: rgb(248, 99, 45);
-    padding: 20px;
-  }
-  
-  .list-item:hover .sub-list-item {
-    display: block;
-  }
-  
-  .sub-sub-nav-list {
+    color:brown;
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    content: 'ℒ♍';/*'10';*/  
+    display: inline-block;
+    top: 5px;
+    left: 10px;
+    opacity:0.33;  /*1  0.33*    https://old.unicode-table.com    екранування  content: '\'\''; */
+}
+
+p::after{
+    color:brown;
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    content: 'ℒ';/*'@';*/
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
     position: absolute;
-    width: 150px;
-    top: 125px;
-    left: 150px;
-  }
-  
-  .sub-sub-list-item {
-    display: none;
-    background-color: rgb(248, 99, 45);
-    padding: 20px;
-  }
-  
-  .sub-list-item:hover .sub-sub-list-item {
-    display: block;
-  }
-  
-  .sub-sub-sub-nav-list {
-    position: absolute;
-    width: 150px;
-    top: 125px;
-    left: 150px;
-  }
-  
-  .sub-sub-sub-list-item {
-    display: none;
-    background-color: rgb(248, 99, 45);
-    padding: 20px;
-  }
-  
-  .sub-sub-list-item:hover .sub-sub-sub-list-item {
-    display: block;
-  }
-  
-  .sub-list-item:hover, .sub-sub-list-item:hover, .sub-sub-sub-list-item:hover {
-    background-color: rgb(150, 54, 19);
-  }
+    bottom: 5px;
+    right: 10px;
+    opacity: 1;
+}

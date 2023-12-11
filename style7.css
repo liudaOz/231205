@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.card-container{
+    width: 35vw;
+    /* height: 80vh; */
+    height: 100vh;
+    border: 3px solid black;
+}
+
+
+/* 
+  vw - 1vw = 1% ширини в'юпорта
+  vh  - 1vh = 1% висоти в'юпорта 
+  */
+
+  .header {
+    height: 50%;
+    width: 100%;
+    background-image: url('20230811_101442-scaled.jpeg');
+    background-size: cover;
+  }
+
+  .card{
+    /* color: gray; */
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .user-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: -20%;
+  }
+
+  /* h2, h3 {
+    color: black;
+  } */
+
+  .links{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
