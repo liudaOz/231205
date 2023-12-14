@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style141223.css" />
+  </head>
+  <body>
+    <form>
+      <label>
+        Ім'я
+        <input type="text" name="username" placeholder="Вадим" autofocus>
+      </label>
+
+      <label class="required">
+        Електронна пошта
+        <input required type="email" name="email" placeholder="example@email.com" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
+      </label>
+
+      <label>
+        Пароль:
+        <input type="password" name="password" placeholder="qwerty1234" pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g">
+      </label>
+
+      <label>
+        Телефон:
+        <input type="text" name="phone" placeholder="0994875717">
+      </label>
+
+      <label>
+        Адреса:
+        <input type="text" name="address" placeholder="вул. Хрещатик, буд...">
+      </label>
+
+      <label>
+        Дата народження:
+        <input type="date" name="birthdate" placeholder="14.09.2005">
+      </label>
+ 
+<fieldset>
+    <legend>Choose your gender</legend>
+
+    <label>
+        <input type="radio"  value="Male" name="gender" checked>
+         Male
+      </label>
+
+      <label>
+        <input type="radio"  value="Female" name="gender">
+        Female
+      </label>
+
+      <label>
+        <input type="radio"  value="Nonbinary" name="gender">
+        Nonbinary
+      </label>
+
+</fieldset>
+
+<fieldset>
+    <legend>Choose your avatar</legend>
+    <input name="avatars"  type="file" multiple>
+</fieldset>
+
+<fieldset>
+    <legend>Choose your city</legend>
+    <select name="city">
+         <option value="Kyiv">Kyiv</option>
+         <option value="Odesa">Odesa</option>
+         <option value="Lviv">Lviv</option>
+         <option value="Kharkiv">Kharkiv</option>
+         <option value="Ternopil">Ternopil</option>
+         <option value="Sumy">Sumy</option>
+         
+
+         <optgroup label="Dnipro region">
+            <option value="Kryvy-Rig">Kryvy Rig, Dnipro</option>
+            <option value="Dnipro">Dnipro</option>
+            <option value="3">3 city</option>
+            <option value="4">4 city</option>
+         </optgroup>
+
+    </select>
+
+</fieldset>
+
+<fieldset>
+    <legend>Choose your city 2</legend>
+    <input type="text" name="city2" list="city-list">
+
+    <datalist id="city-list">
+        <option value="Kyiv"></option>
+        <option value="Odesa"></option>
+        <option value="Lviv"></option>
+        <option value="Kharkiv"></option>
+        <option value="Ternopil"></option>
+        <option value="Sumy">Sumy</option>
+        <option value="Kryvy-Rig"></option>
+        <option value="Dnipro"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+    </datalist>
+</fieldset>
+
+
+<textarea placeholder="Discribe yourself"></textarea>
+
+      
+
+      <label class="required">
+        <input required type="checkbox" name="is-agree" checked>
+        Чи погоджуєтесь з нашою політикою ?<span class="color-red">*</span>
+      </label>
+
+      <label>
+        <input type="checkbox" name="is-subscribed" checked>
+        Чи хочете отримувати СПАМ ?
+      </label>
+
+      <button type="submit">Зареєструватися</button>
+      <button type="reset">Очистити</button>
+    </form>
+  </body>
+</html>
+
+<!--https://ihateregex.io/-->
+
+<!-- 
+
+  Регулярний вираз - це шаблон або правило для пошуку та відповідності текстовим рядкам
+
+  /Міс/
+  
+  Міський     <<--- входження
+  Приміський  <<--- входження
+  Міст        <<--- входження
+  Розмістити  <<--- входження
+  Панацея
+
+  Ідея: за допомогою регулярок ми можемо шукати входження у тексті
+
+-->

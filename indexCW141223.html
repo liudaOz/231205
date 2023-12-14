@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleCW141223.css" />
+  </head>
+  <body>
+    <form>
+      <label>
+        Ім'я
+        <input type="text" name="username" placeholder="Вадим" autofocus>
+      </label>
+
+      <label>
+        Електронна пошта
+        <input type="email" name="email" placeholder="example@email.com" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
+      </label>
+
+      <label>
+        Пароль:
+        <input type="password" name="password" placeholder="qwerty1234" pattern="/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g">
+      </label>
+
+      <label>
+        Телефон:
+        <input type="text" name="phone" placeholder="0994875717">
+      </label>
+
+      <label>
+        Адреса:
+        <input type="text" name="address" placeholder="вул. Хрещатик, буд...">
+      </label>
+
+      <label>
+        Дата народження:
+        <input type="text" name="birthdate" placeholder="14.09.2005">
+      </label>
+
+      <button type="submit">Зареєструватися</button>
+      <button type="reset">Очистити</button>
+    </form>
+  </body>
+</html>
+
+<!--https://ihateregex.io/-->
+
+<!-- 
+
+  Регулярний вираз - це шаблон або правило для пошуку та відповідності текстовим рядкам
+
+  /Міс/
+  
+  Міський     <<--- входження
+  Приміський  <<--- входження
+  Міст        <<--- входження
+  Розмістити  <<--- входження
+  Панацея
+
+  Ідея: за допомогою регулярок ми можемо шукати входження у тексті
+
+-->
